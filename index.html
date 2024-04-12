@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/card_slider.css">
+    <script type="text/javascript" src="js/card_slider.js"></script>
+    <link rel="stylesheet" href="css/library_style.css">
+    <link rel="stylesheet" href="css/theme.min.css">
+    <link rel="stylesheet" href="css/library_media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="/" class="logo">
+                    <img src="images/logo.svg" alt="">
+                    <div class="line"></div>
+                    <div class="block">
+                        <p class="sti-logo">Библиотека</p>
+                        <p style="font-size: 17px;">Cеверского технологического <br> института</p>
+                    </div>
+
+                </a>
+                <div class="appeal">
+                    <div class="date_nedel">
+                        <p id="date"></p>
+                        <a href="http://raspisanie.ssti.ru/#/" class="even-week" id="week"></a>
+                    </div>
+                    <a title="Версия для слабовидящих" href="" class="eng" id="toggle" itemprop="copy">
+                        <img src="images/svgviewer-output.svg" alt="">
+                    </a>
+                    
+
+                    <div class="menu_searh">
+                        <label for="checkbox">
+                            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                            <div class="fa fa-search" aria-hidden="true"><img src="images/search-white.svg" alt="">
+                            </div>
+                        </label>
+                        <input id="checkbox" type="checkbox" />
+                        <ul>
+                            <form class="visible-md visible-lg" method="post">
+                                <div class="form-group">
+                                    <input type="hidden" name="do" value="search"><input type="hidden" name="subaction"
+                                        value="search">
+                                    <input name="story" id="story" type="text" class="form-control input-sm"
+                                        placeholder="Поиск по сайту" onfocus=""
+                                        title="Наберите Ваш запрос и нажмите enter" autocomplete="off">
+                                </div>
+                            </form>
+
+                        </ul>
+                    </div>
+                    <a class="sreda" href="">
+                        <img src="images/sreda.png" alt="">
+                    </a>
+                    <div class="burger"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="dws-menu">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu">
+                <a class="raspisanie-link" href="http://raspisanie.ssti.ru/" target="_blank">Расписание</a>
+                <i class="fa fa-bars"><img src="images/burger.png" alt=""></i>
+            </label>
+
+            <ul class="menu-bottom">
+                <div class="menu-top_block_content">
+                    <div class="navbar_link links_bottom">
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                            <a class="bb checkbox_link" href="/about_institute.html">О библиотеке<i
+                                    class="fa fa-chevron-down"></i></a>
+                            <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+
+                        </li>
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2">
+                            <a class="bb checkbox_link" href="/incoming.html">Студенту</a>
+                            <label for="sub_m2" class="toggleSubmenu"><i class="fa"></i></label>
+                        </li>
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+                            <a class="bb checkbox_link" href="/students.html">Исследователю и
+                                преподавателю
+                            </a>
+                            <label for="sub_m3" class="toggleSubmenu"><i class="fa"></i></label>
+                        </li>
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m4">
+                            <a class="bb checkbox_link" href="/teachers_and_staff.html">Каталоги и коллекции </a>
+                            <label for="sub_m4" class="toggleSubmenu"><i class="fa"></i></label>
+
+                        </li>
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m5">
+                            <a class="bb checkbox_link" href="/graduates.html">Услуги</a>
+                            <label for="sub_m5" class="toggleSubmenu"><i class="fa fa-chevron-down"></i></label>
+
+                        </li>
+                        <li class="nav_link">
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m5">
+                            <a class="bb checkbox_link" href="/graduates.html">Спросить библиотекаря
+                            </a>
+                            <label for="sub_m5" class="toggleSubmenu"><i class="fa fa-chevron-down"></i></label>
+
+                        </li>
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="" style="text-decoration: none;">
+            <div class="catalog" style="background-color: #FF5000; border: none;">Электронный каталог</div>
+        </a>
+    </div>
+ 
+    <div class="library_banner">
+        <div class="library_banner_head"></div>
+        <div class="library_banner-image">
+            <img src="images/banner.jpeg" alt="">
+        </div>
+        <div class="container">
+            <div class="text" >
+                <h2>Добро пожаловать в библиотеку <br>СТИ НИЯУ МИФИ</h2>
+
+                <a href="zapis.html" style="text-decoration: none;">
+                    <div class="registr">Записаться</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+  
+    <section>
+        <div class="container">
+            <div class="news_and_announcements">
+                <div class="news_content">
+                    <div class="liks_title">Новости</div>
+                    <div class="news">
+                        <div class="article">
+                            <a href="{full-link}">
+                                <div class="new_card_image">
+                                    <img src="images/130302.png" alt="">
+                                </div>
+                            </a>
+                            <div class="new_card_info">
+                                <h5 class="new_card_title"><a href="{full-link}">Коллекция Online Reference Works
+                                        издательства Wiley включает в себя</a>
+                                </h5>
+                                <div class="new_date_view">
+                                    <div class="date" title="Опубликовано {date}">09.04.2024</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="{full-link}">
+                                <div class="new_card_image">
+                                    <img src="images/130302.png" alt="">
+                                </div>
+                            </a>
+                            <div class="new_card_info">
+                                <h5 class="new_card_title"><a href="{full-link}">Коллекция Online Reference Works
+                                        издательства Wiley включает в себя</a>
+                                </h5>
+                                <div class="new_date_view">
+                                    <div class="date" title="Опубликовано {date}">09.04.2024</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="{full-link}">
+                                <div class="new_card_image">
+                                    <img src="images/130302.png" alt="">
+                                </div>
+                            </a>
+                            <div class="new_card_info">
+                                <h5 class="new_card_title"><a href="{full-link}">Коллекция Online Reference Works
+                                        издательства Wiley включает в себя</a>
+                                </h5>
+                                <div class="new_date_view">
+                                    <div class="date" title="Опубликовано {date}">09.04.2024</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <a href="{full-link}">
+                                <div class="new_card_image">
+                                    <img src="images/130302.png" alt="">
+                                </div>
+                            </a>
+                            <div class="new_card_info">
+                                <h5 class="new_card_title"><a href="{full-link}">Коллекция Online Reference Works
+                                        издательства Wiley включает в себя</a>
+                                </h5>
+                                <div class="new_date_view">
+                                    <div class="date" title="Опубликовано {date}">09.04.2024</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="new_all_link"><a href="/lastnews" target="_blank">Все новости</a></div>
+                </div>
+                <div class="announcements_content_resources">
+                    <div class="resources_block">
+                        <div class="rigth_links">
+                            <div class="liks_title">Ресурсы</div>
+                            <div class="view-content">
+                                <ul class="menu">
+                                    <a href="/phone_all.html">
+                                        <li class="views-row views-row-1 views-row-odd views-row-first left-menu-link">
+                                            <div class="views-field views-field-title menu-item menu-item-10702">
+                                                <img src="{theme}/images/resurs1.svg" alt="">
+                                                <p>Полнотекстовые базы данных</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a
+                                        href="https://mail-ca.mephi.ru/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail-ca.mephi.ru%2fowa">
+                                        <li class="views-row views-row-2 views-row-even left-menu-link">
+                                            <div class="views-field views-field-title menu-item menu-item-10703">
+                                                <img src="{theme}/images/resurs2.svg" alt="">
+                                                <p>Электронно-библиотечные системы</p>
+                                            </div>
+                                        </li>
+                                    </a>
+
+                                    <a href="http://raspisanie.ssti.ru/#/">
+                                        <li class="views-row views-row-3 views-row-odd left-menu-link">
+                                            <div class="views-field views-field-title menu-item menu-item-10704">
+                                                <img src="{theme}/images/resurs3.svg" alt="">
+                                                <p>Периодические издания</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="announcements_content">
+
+                        <div class="announcements">
+                            <img src="images/curs.jpeg" alt="">
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_banner">
+        <div class="container">
+            <div class="cooperation_title">Рекомендуем</div>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper banner_news">
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/banner.jpeg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="arrows">
+                    <p class="arrows-prew5">&#10229;</p>
+                    <p class="arrows-next5">&#10230;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_banner">
+        <div class="container">
+            <div class="cooperation_title">Полезные ссылки</div>
+            <div class="slide-container swiper">
+                <div class="slide-content2">
+                    <div class="card-wrapper swiper-wrapper banner_news">
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/wwer.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/www.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/neicon20.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/wwer.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/www.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="banner-image">
+                                <img src="images/neicon20.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="arrows">
+                    <p class="swiper-button-prev2">&#10229;</p>
+                    <p class="swiper-button-next2">&#10230;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_banner">
+        <div class="container">
+            <div class="cooperation_title">Фотогалерея</div>
+            <div class="slide-container swiper">
+                <div class="slide-content3">
+                    <div class="card-wrapper swiper-wrapper banner_news">
+                        <div class="card swiper-slide banner_card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="date_count">
+                                <div class="date">10.04.2024</div>
+                                <div class="foto">29 фото</div>
+                            </div>
+                            <p>Выездное заседание Совета РАН по фундаментальным проблемам ядерной физики</p>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="date_count">
+                                <div class="date">10.04.2024</div>
+                                <div class="foto">29 фото</div>
+                            </div>
+                            <p>Выездное заседание Совета РАН по фундаментальным проблемам ядерной физики</p>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="date_count">
+                                <div class="date">10.04.2024</div>
+                                <div class="foto">29 фото</div>
+                            </div>
+                            <p>Выездное заседание Совета РАН по фундаментальным проблемам ядерной физики</p>
+                        </div>
+                        <div class="card swiper-slide banner_card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide_image"><img src="images/banner.jpeg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="date_count">
+                                <div class="date">10.04.2024</div>
+                                <div class="foto">29 фото</div>
+                            </div>
+                            <p>Выездное заседание Совета РАН по фундаментальным проблемам ядерной физики</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="arrows">
+                    <p class="swiper-button-prev3">&#10229;</p>
+                    <p class="swiper-button-next3">&#10230;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-footer">
+        <section class="useful_links">
+            <div class="container">
+                <div class="accordion" id="accordion_footer">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            Библиотеки ЗАТО Северск и Томска
+                        </div>
+                        <div class="accordion__body">
+                            <div class="useful_links-blocks accordion__body">
+                                <div class="useful_links-block">
+                                    <a target="_blank" href="https://minobrnauki.gov.ru/" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/min-obr-header_0.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Министерство науки и высшего образования РФ</div>
+                                    </a>
+                                    <a target="_blank" href="https://mephi.ru/science-and-religion" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/science-religion.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Диалог науки и религии</div>
+                                    </a>
+                                    <a target="_blank" href="https://mephi.ru/node/18472" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/e1242_mchs.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Гражданская оборона, предупреждение ЧС и пожарная
+                                            безопасность</div>
+                                    </a>
+                                </div>
+                                <div class="useful_links-block">
+                                    <a target="_blank" href="https://minobrnauki.gov.ru/action/situational_center/"
+                                        class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/min-obr-header.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Ситуационный центр Минобрнауки России</div>
+                                    </a>
+
+                                    <a target="_blank" href="https://rosatom-career.ru/" class="useful_link">
+                                        <div class="useful_link-img"><img src="{theme}/images/useful_links/frame_1.png"
+                                                alt="">
+                                        </div>
+                                        <div class="useful_link-text">Отраслевой карьерный портал Росатома</div>
+                                    </a>
+                                    <a target="_blank" href="https://mephi.ru/protiv-terrora" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/anti-terror.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Наука и образование против террора</div>
+                                    </a>
+                                </div>
+
+                                <div class="useful_links-block">
+                                    <a target="_blank"
+                                        href="https://studyinrussia.ru/study-in-russia/universities/mephi/"
+                                        class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/study-in-russia.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Study in Russia</div>
+                                    </a>
+                                    <a target="_blank" href="https://priority2030.ru/" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/logo_-osnovnoy_dlya_belogo_fona.png"
+                                                alt="">
+                                        </div>
+                                        <div class="useful_link-text">Приоритет 2030</div>
+                                    </a>
+
+                                    <a target="_blank" href="https://yandex.ru/profi/" class="useful_link">
+                                        <div class="useful_link-img"><img src="{theme}/images/useful_links/prof.png"
+                                                alt="">
+                                        </div>
+                                        <div class="useful_link-text">Олимпиада «Я - профи»</div>
+                                    </a>
+                                </div>
+
+                                <div class="useful_links-block">
+                                    <a target="_blank" href="https://mephi.ru/anti-corruption" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/anti-corruption.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Противодействие коррупции</div>
+                                    </a>
+
+                                    <a target="_blank" href="https://endowment.mephi.ru/" class="useful_link">
+                                        <div class="useful_link-img"><img
+                                                src="{theme}/images/useful_links/endowment.png" alt="">
+                                        </div>
+                                        <div class="useful_link-text">Эндаумент-фонд НИЯУ МИФИ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="container">
+
+
+                <div class="footer_container">
+                    <div class="block">
+                        <div class="footer_image">
+                            <a href="https://mephi.ru/">
+                                <img src="images/footer_logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="footer_image">
+                            <a href="https://mephi.ru/">
+                                <img src="images/mephi.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h4>Часы работы</h4>
+                        <p>пн, вт, ср, чт, пт: 08.30-17.00</p>
+                        <p>сб.:выходной</p>
+                        <p>вс: выходной</p>
+                    </div>
+                    <div class="block">
+                        <h4>Контакты</h4>
+                        <div class="block-rigth_info">
+                            <p>Кабинет № 115, 121</p>
+                            <p>8 (3823) 780-131, 8 (3823) 780-132</p>
+                            <p> priem_sti@mephi.ru</p>
+                            <div class="socsety">
+                                <a href="https://vk.com/stinrnumephl" target="_blank">
+                                    <svg role="img" viewBox="0 0 576 512">
+                                        <path fill="currentColor"
+                                            d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                    </svg>
+                                </a>
+                                <a href="https://t.me/sti_nrnu_mephi" target="_blank">
+                                    <svg role="img" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/user/STINRNUMEPhl" target="_blank">
+                                    <svg role="img" viewBox="0 0 576 512">
+                                        <path fill="currentColor"
+                                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: false,
+        });
+    </script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
